@@ -1,6 +1,13 @@
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .container{
-        max-width: 100%;
+        width:100vh;
+        max-width: 640px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 0;
     }
     .icon-menu{
         display:flex;
@@ -78,18 +85,18 @@
         margin-top: 0;
         border-radius: 0;
         background-size: cover;
-        height: 43rem;
+        height: 56rem;
         object-fit: cover;
         width: 100vh;
-        max-width: 480px; 
+        max-width: 670px; 
 
     }
     .icon-previous{
-        top: 27rem;
+        top: 35rem;
     }
     .icon-next{
-        top: 27rem;
-        left: 41rem;
+        top: 35rem;
+        left: 59rem;
     }
     h2{
         font-size: 1.5rem;
@@ -104,7 +111,7 @@
         padding:3rem;
         margin-top: 0;
         width: 50vh;
-        max-width: 480px;
+        max-width: 600px;
     }
     h4{
         font-size: 2rem;
@@ -128,7 +135,7 @@
     .add-product button{
         height: 8rem;
         margin-top: 2rem;
-        width: 42rem;
+        width: 80vh;
         font-size: 2.5rem;
     }
     .plus{
