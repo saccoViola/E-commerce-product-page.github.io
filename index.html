@@ -12,12 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general-and-navbar.css">
+    <link rel="stylesheet" href="product-images-descriptions.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="media-query.css">
   </head>
-  <body>
+  <body id="body">
     <main class="container">
       <!--top navigation menu-->
       <header class="top-nav">
+        <img src="images/icon-menu.svg" alt="icon hamburger menu" class="icon-menu">
         <img src="images/logo.svg" alt="logo" class="logo">
         <nav>
           <ul class="select-menu">
@@ -28,7 +32,10 @@
             <li>Contact</li>
           </ul>
           <div class="top-icons">
-            <img src="images/icon-cart.svg" alt="cart icon" class="cart" id="cart">
+            <div style="position: relative;">
+              <img src="images/icon-cart.svg" alt="cart icon" class="cart" id="cart"> 
+              <span id="cart-product-number" class="cart-product-number"></span>
+            </div>
             <img src="images/image-avatar.png" alt="avatar" class="avatar">
             <!--cart box-->
             <div class="cart-box hidden" id="cart-box">
@@ -59,16 +66,33 @@
         </nav>
       </header>
       <section class="main-content">
-        <!-- product images-->
-        <article class="product-images">
-          <div alt="detail product image big" class="main-picture" id="main-picture">
 
-          </div>
+        <article class="product-images" id="product-images">
+          <span class="icon-previous"></span>
+          <img src="images/image-product-1.jpg" alt="detail product image big" class="main-picture" id="main-picture">
+          <span class="icon-next"></span>
+
           <div class="small-images-under">
-            <img src="images/image-product-1-thumbnail.jpg" alt="detail product first image small" id="first-picture" class="small-picture">
-            <img src="images/image-product-2-thumbnail.jpg" alt="detail product second image small" id="second-picture" class="small-picture">
-            <img src="images/image-product-3-thumbnail.jpg" alt="detail product third image small" id="third-picture" class="small-picture">
-            <img src="images/image-product-4-thumbnail.jpg" alt="detail product forth image small" id="forth-picture" class="small-picture">
+            <picture>
+              <img src="images/image-product-1.jpg" class="main-picture hidden" alt="detail product image big">
+              <img src="images/image-product-1-thumbnail.jpg" alt="detail product first image small" class="small-picture">
+            </picture>
+
+            <picture id="second-picture">
+              <img src="images/image-product-2.jpg" class="main-picture hidden" alt="detail product image big">
+              <img src="images/image-product-2-thumbnail.jpg" alt="detail product second image small"  class="small-picture">
+            </picture>
+
+            <picture id="third-picture">
+              <img src="images/image-product-3.jpg" alt="detail product image big" class="main-picture hidden">
+              <img src="images/image-product-3-thumbnail.jpg" alt="detail product third image small" class="small-picture">
+            </picture>
+
+            <picture id="forth-picture" >
+              <img src="images/image-product-4.jpg" alt="detail product image big" class="main-picture hidden">
+              <img src="images/image-product-4-thumbnail.jpg" alt="detail product forth image small" class="small-picture">
+            </picture>
+            
           </div>
         </article>
          <!-- product description-->
@@ -83,7 +107,7 @@
           </p>
           <div class="discount">
             <span class="dollar-sign">$</span><h3 id="price">125.00</h3>
-            <span class="scount-amount">50%</span>
+            <span class="discount-amount">50%</span>
           </div>
           <h4 class="price">$250.00</h4>
           <div class="add-product">
@@ -98,7 +122,47 @@
           </div>
         </article>
       </section>
+      <section class="lightbox-gallery hidden" id="lightbox-gallery">
+        <article class="product-images center">
+          <span class="icon-close" id="icon-close">
+            <!-- <svg class="icon-close" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg> -->
+          </span>
+          <span class="icon-previous" id="icon-previous"></span>
+          <span class="icon-next" id="icon-next"></span>
+          <img src="images/image-product-1.jpg" alt="detail product image big" class="lightbox-main-picture" id="lightbox-main-picture">
+
+          <div class="small-images-under">
+            <picture>
+              <img src="images/image-product-1.jpg" class="main-picture big-picture hidden" alt="detail product image big">
+              <img src="images/image-product-1-thumbnail.jpg" alt="detail product first image small" class="lightbox-small-picture">
+            </picture>
+
+            <picture>
+              <img src="images/image-product-2.jpg" class="main-picture big-picture hidden" alt="detail product image big">
+              <img src="images/image-product-2-thumbnail.jpg" alt="detail product second image small"  class="lightbox-small-picture">
+            </picture>
+
+            <picture>
+              <img src="images/image-product-3.jpg" alt="detail product image big" class="main-picture big-picture hidden">
+              <img src="images/image-product-3-thumbnail.jpg" alt="detail product third image small" class="lightbox-small-picture">
+            </picture>
+
+            <picture>
+              <img src="images/image-product-4.jpg" alt="detail product image big" class="main-picture big-picture hidden">
+              <img src="images/image-product-4-thumbnail.jpg" alt="detail product forth image small" class="lightbox-small-picture">
+            </picture>
+            
+          </div>
+
+      </section>
     </main>
     <script src="script.js"></script>
+    <script src="lightbox.js"></script>
   </body>
 </html>
