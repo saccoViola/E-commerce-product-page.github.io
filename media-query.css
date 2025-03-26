@@ -1,7 +1,6 @@
 @media (max-width: 480px) {
     .container{
-        max-width: 95%;
-        padding: 10px;
+        max-width: 100%;
     }
     .icon-menu{
         display:flex;
@@ -24,7 +23,8 @@
         
     }
     .cart-box{
-        width: 47rem;
+        /* width: 47rem; */
+        width: 90vw;
         height: 33rem;
         right: -6rem;
         border-radius: 1rem;
@@ -39,7 +39,7 @@
         font-size: 2rem;
     }
     .cart-products{
-        width: 48rem;
+        width: 90vw;
     }
     .delete-icon{
         margin-right: 2rem;
@@ -52,9 +52,11 @@
     }
 
     .top-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
         border-bottom: none;
-        gap: 3rem;
-        margin-top:-2rem;
     }
     .select-menu{
         display:none;
@@ -66,19 +68,20 @@
     }
     .product-images{
         flex:1;
-        width: 100%;
+        width: 100vh;
         padding: 0;    
     }
     .small-images-under{
         display: none;
     }
     .main-picture{
-        margin-top: -1rem;
+        margin-top: 0;
         border-radius: 0;
         background-size: cover;
-        height: 39rem;
+        height: 43rem;
         object-fit: cover;
-        width: 480px;
+        width: 100vh;
+        max-width: 480px; 
 
     }
     .icon-previous{
@@ -100,13 +103,14 @@
     .product-description{
         padding:3rem;
         margin-top: 0;
-        width: 48rem;
+        width: 50vh;
+        max-width: 480px;
     }
     h4{
-        font-size: 2.5rem;
+        font-size: 2rem;
         position: absolute;
-        bottom: 2rem;
-        left: 35rem;
+        bottom: -3rem;
+        left: 34rem;
     }
     .dollar-sign{
         font-size: 4rem;
