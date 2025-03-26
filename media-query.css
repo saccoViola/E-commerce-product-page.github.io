@@ -1,0 +1,133 @@
+@media (max-width: 480px) {
+    .container{
+        max-width: 95%;
+        padding: 10px;
+    }
+    .icon-menu{
+        display:flex;
+        width: 3rem;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+    .logo{
+        height: 3rem;
+        width: 17rem;
+    }
+    .top-icons{
+        margin-left: 7rem;
+        margin-top: -0.5rem;
+    }
+    .cart {
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    .cart-box{
+        width: 47rem;
+        height: 33rem;
+        right: -6rem;
+        border-radius: 1rem;
+    }
+    .cart-box h5{
+        height: 7rem;
+        font-size:2rem;
+    }
+    .cart-box p{
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    .cart-products{
+        width: 48rem;
+    }
+    .delete-icon{
+        margin-right: 2rem;
+    }
+    #cart-product-name{
+        font-size:2rem;
+    }
+    .avatar{
+        margin-top: 0.5rem;
+    }
+
+    .top-nav{
+        border-bottom: none;
+        gap: 3rem;
+        margin-top:-2rem;
+    }
+    .select-menu{
+        display:none;
+        
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-images{
+        flex:1;
+        width: 100%;
+        padding: 0;    
+    }
+    .small-images-under{
+        display: none;
+    }
+    .main-picture{
+        margin-top: -1rem;
+        border-radius: 0;
+        background-size: cover;
+        height: 39rem;
+        object-fit: cover;
+        width: 480px;
+
+    }
+    .icon-previous{
+        top: 27rem;
+    }
+    .icon-next{
+        top: 27rem;
+        left: 41rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin-top: -2rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    .product-description{
+        padding:3rem;
+        margin-top: 0;
+        width: 48rem;
+    }
+    h4{
+        font-size: 2.5rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 35rem;
+    }
+    .dollar-sign{
+        font-size: 4rem;
+
+    }
+    h3{
+        font-size: 4rem;
+    }
+    .quantity{
+        width: 48rem;
+    }
+    .add-product{
+        flex-direction: column;
+    }
+    .add-product button{
+        height: 8rem;
+        margin-top: 2rem;
+        width: 42rem;
+        font-size: 2.5rem;
+    }
+    .plus{
+        margin-right: 4rem;
+    }
+}

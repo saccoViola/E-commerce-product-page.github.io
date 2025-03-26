@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container">
+      <!--top navigation menu-->
+      <header class="top-nav">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <nav>
+          <ul class="select-menu">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          <div class="top-icons">
+            <img src="images/icon-cart.svg" alt="cart icon" class="cart" id="cart">
+            <img src="images/image-avatar.png" alt="avatar" class="avatar">
+            <!--cart box-->
+            <div class="cart-box hidden" id="cart-box">
+              <h5>Cart</h5>
+              <p id="cart-empty">Your cart is empty.</p>
+              <div class="cart-products hidden" id="cart-products">
+                <div class="cart-image" id="cart-product-image">
+
+                </div>
+                <div class="cart-product-description" id="cart-product-description">
+                  <div id="cart-product-name">
+
+                  </div>
+                  <div class="price-container">
+                    <div id="product-price">
+
+                    </div>
+                    <span id="price-and-quantity"></span>
+                </div>
+                </div>
+
+                <span class="delete-icon" id="delete-product">
+                </span>
+              </div> 
+              <button class="checkout-button hidden" id="checkout-button" aria-label="checkout">Checkout</button> 
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="main-content">
+        <!-- product images-->
+        <article class="product-images">
+          <div alt="detail product image big" class="main-picture" id="main-picture">
+
+          </div>
+          <div class="small-images-under">
+            <img src="images/image-product-1-thumbnail.jpg" alt="detail product first image small" id="first-picture" class="small-picture">
+            <img src="images/image-product-2-thumbnail.jpg" alt="detail product second image small" id="second-picture" class="small-picture">
+            <img src="images/image-product-3-thumbnail.jpg" alt="detail product third image small" id="third-picture" class="small-picture">
+            <img src="images/image-product-4-thumbnail.jpg" alt="detail product forth image small" id="forth-picture" class="small-picture">
+          </div>
+        </article>
+         <!-- product description-->
+        <article class="product-description">
+          <h2>Sneaker Company</h2>
+
+          <h1 id="product-name">Fall Limited Edition Sneakers</h1>
+
+          <p> 
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="discount">
+            <span class="dollar-sign">$</span><h3 id="price">125.00</h3>
+            <span class="scount-amount">50%</span>
+          </div>
+          <h4 class="price">$250.00</h4>
+          <div class="add-product">
+            <div class="quantity">
+              <div class="minus" id="minus">
+
+              </div>
+              <p id="total-quantity">0</p>
+              <div class="plus" id="plus"></div>
+            </div>
+            <button id="add-to-cart"><img src="images/icon-cart.svg" alt="cart-icon">Add to cart</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

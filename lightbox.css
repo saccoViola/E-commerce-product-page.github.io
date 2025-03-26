@@ -1,0 +1,105 @@
+
+/* .highlight{
+    /* outline: 9999px solid rgba(0,0,0,0.5);
+
+} */
+
+
+/* .highlight{
+    background-color: hsl(220, 14%, 75%);
+    opacity: 25%;
+
+} */
+
+.lightbox-gallery{
+    z-index: 100;
+    background-color: hsl(0, 0%, 0%, 0.75);
+    /* opacity:75%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.no-background{
+    /* background-color: white !important; */
+    opacity: 100%;
+    z-index: 100;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2.5rem;
+    z-index: 1000;
+    opacity: 100%;
+}
+
+.lightbox-main-picture{
+    width: 52rem;
+    height: 52rem;
+    border-radius: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top:8rem;
+    cursor: pointer;
+}
+.lightbox-small-picture{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.icon-close{
+    background-image: url(images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    left: 53rem;
+    top: 8rem;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+
+.icon-close:hover{
+    filter: invert(47%) sepia(99%) saturate(708%) hue-rotate(346deg) brightness(101%) contrast(104%);
+}
+
+.icon-previous{
+    background-image: url(images/icon-previous.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* display: block; */
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    top: 35rem;
+    left: 1rem;
+    background-color: var(--light-grayish-blue);
+    background-position: center;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.icon-next{
+    background-image: url(images/icon-next.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* display: block; */
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    top: 35rem;
+    right: 13rem;
+    background-color: var(--light-grayish-blue);
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
