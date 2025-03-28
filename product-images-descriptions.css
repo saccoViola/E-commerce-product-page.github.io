@@ -55,13 +55,14 @@ h1{
     margin-bottom: 3rem;
     color: var(--very-dark-blue);
 }
-.product-description p{
+.description{
     color:var(--dark-grayish-blue);
     margin-bottom: 1.5rem;
     line-height: 1.6;
     font-size: 1.8rem;
 }
 .discount{
+    position: relative;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
