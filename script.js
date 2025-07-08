@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cartProduct.classList.add("hidden");
         checkoutButton.classList.add("hidden");
         quantity.innerHTML = 0;
+        totQuantity = 0;
         cartProductNumber.style.display = "none";
     })
 

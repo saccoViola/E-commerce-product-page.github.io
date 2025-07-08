@@ -76,7 +76,7 @@
     background-image: url(images/icon-previous.svg);
     background-repeat: no-repeat;
     background-size: auto;
-    /* display: block; */
+    display: none;
     width: 6rem;
     height: 6rem;
     position: fixed;
@@ -92,7 +92,7 @@
     background-image: url(images/icon-next.svg);
     background-repeat: no-repeat;
     background-size: auto;
-    /* display: block; */
+    display: none;
     width: 6rem;
     height: 6rem;
     position: fixed;

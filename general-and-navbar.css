@@ -6,7 +6,6 @@
     --grayish-blue: hsl(220, 14%, 75%);
     --light-grayish-blue: hsl(223, 64%, 98%);
     --pale-orange: hsl(25, 100%, 94%);
-
   }
 
 *{
@@ -14,12 +13,14 @@
     padding:0;
     box-sizing: border-box;
     font-family: "Kumbh Sans", sans-serif;
+}
+
+html{
     font-size: 10px;
 }
 
 .container{
-    max-width:144rem;
-    min-width:32rem;
+    width: clamp(32rem, 90%, 144rem);
     margin:auto;
     font-size:1.6rem;
     margin-top:4rem;
@@ -106,8 +107,8 @@ nav{
     position: absolute;
     width:38rem;
     height: 25rem;
-    top: 10rem;
-    right: 15rem;
+    top: 8rem;
+    right: 1rem;
     padding: 1.5rem;
     background-color: var(--white) ;
     z-index: 1;
