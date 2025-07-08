@@ -19,6 +19,7 @@
 
 .container{
     max-width:144rem;
+    min-width:32rem;
     margin:auto;
     font-size:1.6rem;
     margin-top:4rem;
