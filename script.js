@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     //cart variables and actions
+    const container = document.getElementById("container");
     const cartIcon = document.getElementById("cart"); //cart icon navbar
     const cartBox = document.getElementById("cart-box"); //cart box
     const cartEmpty = document.getElementById("cart-empty"); //what we see when cart is empty
     const cartProduct = document.getElementById("cart-products");//what we see when we have products in cart
-
+    
     const addButton = document.getElementById("add-to-cart"); //add to cart button
 
     const productName = document.getElementById("product-name"); //Fall Limited Edition Sneakers
@@ -125,16 +126,17 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxGallery.style.display = "none"
 
     // const body = document.getElementById("body");
-
-    mainPicture.addEventListener("click", (e)=>{
+    if(window.innerWidth >= 800) {
+        mainPicture.addEventListener("click", (e)=>{
         e.preventDefault();
         cartBox.classList.add("hidden");
         lightboxGallery.style.display = "flex";
         lightboxGallery.classList.remove("hidden");
         
-    })
+        })
+    } 
+
     const closeIcon = document.getElementById("icon-close");
-    console.log(closeIcon)
 
     closeIcon.addEventListener("click", ()=>{
         lightboxGallery.style.display = "none";
@@ -164,7 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const bigPictures = document.querySelectorAll(".big-picture");
-    console.log(bigPictures)
 
     for (let i = 0; i < bigPictures.length; i++) {
         let next = 0;

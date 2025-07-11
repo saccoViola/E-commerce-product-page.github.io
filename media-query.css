@@ -3,6 +3,7 @@
         width:100vh;
         max-width: 600px;
         margin-top:0;
+        overflow: hidden;
     
     }
     .top-nav{
@@ -166,5 +167,10 @@
         width: auto;
         background: none;
     } */
-    
+    .lightbox-main-picture{
+        display:none;
+    }
+    .lightbox-gallery{
+        display: none;
+    }
 }
