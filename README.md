@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/saccoViola/E-commerce-product-page.github.io
+- Live Site URL: https://saccoviola.github.io/E-commerce-product-page.github.io/
 
 ## My process
 
@@ -42,8 +42,8 @@ It was a challenging process, and there are still a few things I’d like to ref
 
 JavaScript DOM manipulation: I used vanilla JavaScript to handle the lightbox modal, image gallery, and cart functionality — improving my understanding of event listeners, class toggling, and dynamic content updates.
 
-Managing state in a simple app: Even without a framework, I learned how to manage the state of the shopping cart, updating item quantity and total dynamically.
+Managing state in a simple app: even without a framework, I learned how to manage the state of the shopping cart, updating item quantity and total dynamically.
 
-Debugging and problem-solving: Some features, like syncing the thumbnail gallery with the main image or hiding/showing the cart, were tricky at first. Solving them helped me improve my logical thinking and attention to detail.
+Debugging and problem-solving: some features, like syncing the thumbnail gallery with the main image or hiding/showing the cart, were tricky at first. Solving them helped me improve my logical thinking and attention to detail.
 
 
